@@ -1,3 +1,10 @@
+/**
+ * Service responsible for performing the calculator operations.
+ *
+ * @author Carlos Henrique Brito Malta Leão <carlosbmaltaleao@gmail.com>
+ * @since 1.0.0
+ */
+
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -11,6 +18,15 @@ export class CalculatorService {
 
   constructor() {}
 
+  /**
+   * Method that calculates a mathematical operation from two numbers.
+   * Supports sum, subtraction, division and multiplication.
+   *
+   * @param num1 number
+   * @param num2 number
+   * @param operation string Operation to be executed
+   * @returns number Operation result
+   */
   calculate(num1: number, num2: number, operation: string): number {
     let result: number;
 
