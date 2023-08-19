@@ -1,7 +1,7 @@
 export class Task {
   constructor(
     public id?: number,
-    public name?: number,
+    public name?: string,
     public done?: boolean
   ) {}
 }
