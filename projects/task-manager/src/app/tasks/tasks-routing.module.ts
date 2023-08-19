@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 
 import { ListTaskComponent } from './list';
+import { InsertTaskComponent } from './insert';
 
 export const TaskRoutes: Routes = [
   {
@@ -10,5 +11,9 @@ export const TaskRoutes: Routes = [
   {
     path: 'tasks/list',
     component: ListTaskComponent,
+  },
+  {
+    path: 'tasks/insert',
+    component: InsertTaskComponent,
   },
 ];
