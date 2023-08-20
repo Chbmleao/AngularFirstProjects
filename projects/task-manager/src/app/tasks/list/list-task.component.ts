@@ -24,7 +24,7 @@ export class ListTaskComponent implements OnInit {
     $event.preventDefault();
     if (confirm('Do you want to remove "' + task.name + '" task?')) {
       this.taskService.delete(task.id);
-      this.tasks = this.taskService.getAll();
+      this.tasks = this.getAll();
     }
   }
 }
