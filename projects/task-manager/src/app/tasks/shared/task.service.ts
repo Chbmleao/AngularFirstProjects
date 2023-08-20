@@ -48,5 +48,7 @@ export class TaskService {
         objs[index].done = !obj.done;
       }
     });
+
+    localStorage['tasks'] = JSON.stringify(tasks);
   }
 }

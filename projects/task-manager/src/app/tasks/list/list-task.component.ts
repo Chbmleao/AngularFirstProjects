@@ -27,4 +27,11 @@ export class ListTaskComponent implements OnInit {
       this.tasks = this.getAll();
     }
   }
+
+  updateStatus(task: Task): void {
+    if (confirm('Do you want to update "' + task.name + '" task?')) {
+      this.taskService.updateStatus(task.id);
+      this.tasks = this.getAll();
+    }
+  }
 }

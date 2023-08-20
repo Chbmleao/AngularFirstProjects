@@ -16,7 +16,7 @@ export class InsertTaskComponent implements OnInit {
   constructor(private taskService: TaskService, private router: Router) {}
 
   ngOnInit(): void {
-    this.task = new Task();
+    this.task = new Task(0, '', false);
   }
 
   insert(): void {
