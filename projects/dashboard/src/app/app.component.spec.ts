@@ -1,10 +1,13 @@
 import { TestBed } from '@angular/core/testing';
+
 import { AppComponent } from './app.component';
+import { DashboardModule } from './dashboard';
 
 describe('AppComponent', () => {
   beforeEach(() =>
     TestBed.configureTestingModule({
       declarations: [AppComponent],
+      imports: [DashboardModule],
     })
   );
 
