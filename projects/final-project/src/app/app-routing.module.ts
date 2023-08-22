@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { DashboardRoutes } from './dashboard';
+import { CalculatorRoutes } from './calculator';
 
 export const routes: Routes = [
   {
@@ -10,6 +11,7 @@ export const routes: Routes = [
     pathMatch: 'full',
   },
   ...DashboardRoutes,
+  ...CalculatorRoutes,
 ];
 
 @NgModule({
