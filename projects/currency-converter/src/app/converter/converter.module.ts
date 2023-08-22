@@ -6,9 +6,15 @@ import { ConverterComponent } from './components';
 import { CurrencyService, ConverterService } from './services';
 import { NumberDirective } from './directives';
 import { ModalPriceComponent } from './utils';
+import { BrDatePipe } from './pipes';
 
 @NgModule({
-  declarations: [ConverterComponent, NumberDirective, ModalPriceComponent],
+  declarations: [
+    ConverterComponent,
+    NumberDirective,
+    ModalPriceComponent,
+    BrDatePipe,
+  ],
   imports: [CommonModule, FormsModule],
   exports: [ConverterComponent],
   providers: [CurrencyService, ConverterService],
