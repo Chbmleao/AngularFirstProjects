@@ -6,7 +6,9 @@ describe('ConverterService', () => {
   let service: ConverterService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      providers: [ConverterService],
+    });
     service = TestBed.inject(ConverterService);
   });
 
