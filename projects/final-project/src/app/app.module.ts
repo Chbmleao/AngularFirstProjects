@@ -5,10 +5,17 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardModule } from './dashboard';
 import { CalculatorModule } from './calculator';
+import { ConverterModule } from './converter';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, DashboardModule, CalculatorModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    DashboardModule,
+    CalculatorModule,
+    ConverterModule,
+    AppRoutingModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
