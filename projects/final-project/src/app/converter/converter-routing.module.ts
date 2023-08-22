@@ -3,7 +3,7 @@ import { ConverterComponent } from './components';
 
 export const ConverterRoutes: Routes = [
   {
-    path: 'conversor-moedas',
+    path: 'currency-converter',
     component: ConverterComponent,
   },
 ];
