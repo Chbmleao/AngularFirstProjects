@@ -28,13 +28,18 @@ export class ConverterComponent implements OnInit {
   }
 
   init() {
-    this.conversion = new Conversion('USD', 'BRL', null);
+    this.conversion = new Conversion('EUR', 'BRL', null);
     this.hasError = false;
   }
 
   convert() {
     if (this.conversionForm.form.valid) {
-      alert('Converting: ' + JSON.stringify(this.conversion));
+      this.converterService.convert(this.conversion).subscribe((response) => {
+        this.conversionResponse = response;
+        if (response.success === false) {
+          this.hasError = true;
+        }
+      });
     }
   }
 }

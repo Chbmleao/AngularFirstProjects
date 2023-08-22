@@ -21,9 +21,7 @@
         [(ngModel)]="conversion.currencyFrom"
         required
       >
-        <option *ngFor="let currency of currencies" [value]="currency.acronym">
-          {{ currency.acronym }} - {{ currency.description }}
-        </option>
+        <option [value]="['EUR']">EUR - Euro</option>
       </select>
       <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
       <select
@@ -43,6 +41,7 @@
         (click)="convert()"
         [disabled]="!conversionForm.form.valid"
       />
+      {{ conversionResponse | json }}
     </form>
   </div>
 </div>
